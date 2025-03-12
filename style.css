@@ -1,0 +1,61 @@
+body{ /*body is the parent of all elements*/
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form { /*form is the parent of all elements*/
+    background-color: #ffffff3d;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input{ /*input is the parent of all elements*/
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+input:hover{ /*input is the parent of all elements*/
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+button{ /*button is the parent of all elements*/
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+button:hover{ /*button is the parent of all elements*/
+    cursor: pointer;
+    background-color: #03ba1291;
+}
+
+button:active{ /*button is the parent of all elements*/
+    background-color: #03ba12;
+}
+
+button:focus{ /*button is the parent of all elements*/
+    outline: none;
+}
+
+.error{ /*error is the parent of all elements*/
+    color: red;
+    font-size: 12px;
+}
+
+.success{ /*success is the parent of all elements*/
+    color: green;
+    font-size: 12px;
+}

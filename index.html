@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Linking the css file -->
+    <title>Javascript Form Validation project</title>
+</head>
+<body>
+    <form id="registrationForm" onsubmit="validateinput(event)"> <!-- Form for the registration -->
+        <h1>
+            <center>
+                Registration Form <!-- Heading for the form -->
+            </center>
+        </h1>
+        <center> <!-- Centering the form --> 
+            <p> 
+                Please fill in this form to create an account. <!-- Instructions for the form -->
+            </p>
+             <label for="firstname"> <!-- Label for the first name -->
+                First name
+            </label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="middlename"> <!-- Label for the middle name -->
+                Middle Name
+            </label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="lastname"> <!-- Label for the last name -->
+                Last Name
+            </label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required onchange="validateinput(event)"> <!-- Input field for the first name -->
+            <input type="text" id="middlename" name="middlename" placeholder="Enter your middle name"> <!-- Input field for the middle name -->
+            <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required onchange="validateinput(event)"> <!-- Input field for the last name -->
+            <br>
+            <label for="username"> <!-- Label for the username -->
+                Username
+            </label>
+            <br>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required onchange="validateinput(event)"> <!-- Input field for the username -->
+            <br>
+            <label for="Email"> <!-- Label for the email -->
+                Email
+            </label>
+            <br>
+            <input type="text" id="email" name="email" placeholder="Enter your Email address" required onchange="validateinput(event)"> <!-- Input field for the email -->
+            <br>
+            <label for="phone_no"> <!-- Label for the phone number -->
+                Phone number
+            </label>
+            <br>
+            <input type="number" id="phone_no" name="phone_no" placeholder="Enter your phone number" required onchange="validateinput(event)"> <!-- Input field for the phone number -->
+            <br>
+            <label for="password"> <!-- Label for the password -->
+                Enter Password
+            </label>
+            <br>
+            <input type="password" id="password" name="password" palceholder="Enter a password" required onchange="validateinput(event)"> <!-- Input field for the password -->
+            <br>
+            <label for="re-enter_password"> <!-- Label for re-entering the password -->
+                Re-enter password
+            </label>
+            <br>
+            <input type="password" id="reenter_password" name="reenter_password" placeholder="Re-enter the password" required onchange="validateinput(event)"> <!-- Input field for re-entering the password -->
+            <br><br>
+            <button type="submit" id="submit"> <!-- Button for submitting the form -->
+                Submit
+            </button>
+        </center>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
